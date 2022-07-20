@@ -9,7 +9,7 @@ import moment from 'moment';
 export const Filters = ({filters, setFilters, directors, producers}) => {
 
     return (
-        <div className='row mb-5'>
+        <>
             <div className='col-3'>
                 <LocalizationProvider dateAdapter={AdapterMoment}>
                     <DatePicker
@@ -88,6 +88,6 @@ export const Filters = ({filters, setFilters, directors, producers}) => {
                     </Select>
                 </FormControl>
             </div>
-        </div>
+        </>
     )
 }
